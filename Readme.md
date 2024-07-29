@@ -49,4 +49,4 @@ The `main.py` script handles the entire workflow:
 4. Rank customers by churn probability.
 5. Save the ranked customers to a CSV file.
 
-The output file will be saved as `data/processed/ranked_customers.csv`.
+The output file will be saved as `data/ranked_customers.csv`.
