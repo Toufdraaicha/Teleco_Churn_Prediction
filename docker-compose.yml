@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  telco_churn:
+    build: .
+    container_name: telco_churn
+    volumes:
+      - .:/app
+    ports:
+      - "8000:80"
+    command: python main.py
+
