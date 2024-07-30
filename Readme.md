@@ -23,7 +23,7 @@ The dataset contains two files:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/Toufdraaicha/TELCO_Churn_Prediction.git
+    git clone https://github.com/Toufdraaicha/Teleco_Churn_Prediction.git
     cd TELCO_Churn_Prediction
     ```
 
