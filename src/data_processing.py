@@ -3,8 +3,6 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
-
-# Define columns
 categorical_cols = ['COLLEGE', 'JOB_CLASS', 'REPORTED_SATISFACTION', 'REPORTED_USAGE_LEVEL', 'CONSIDERING_CHANGE_OF_PLAN']
 numerical_cols = ['DATA', 'INCOME', 'OVERCHARGE', 'LEFTOVER', 'HOUSE', 'CHILD', 'REVENUE', 'HANDSET_PRICE', 'OVER_15MINS_CALLS_PER_MONTH', 'TIME_CLIENT', 'AVERAGE_CALL_DURATION']
 
@@ -16,7 +14,6 @@ def load_and_preprocess_data(train_path, test_path):
     train_df['HOUSE'].fillna(train_df['HOUSE'].median(), inplace=True)
     train_df['LESSTHAN600k'].fillna(train_df['LESSTHAN600k'].mode()[0], inplace=True)
 
-    # Preprocessing pipelines
     numerical_transformer = Pipeline(steps=[
         ('imputer', SimpleImputer(strategy='median')),
         ('scaler', StandardScaler())])
