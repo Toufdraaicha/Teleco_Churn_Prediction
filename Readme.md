@@ -24,7 +24,7 @@ The dataset contains two files:
 
     ```bash
     git clone https://github.com/Toufdraaicha/Teleco_Churn_Prediction.git
-    cd TELCO_Churn_Prediction
+    cd Teleco_Churn_Prediction
     ```
 
 2. **Build the Docker image:**
