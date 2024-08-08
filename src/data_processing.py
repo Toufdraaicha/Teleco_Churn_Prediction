@@ -35,8 +35,8 @@ def load_and_preprocess_data(train_path, test_path):
     X_train = preprocessor.fit_transform(X)
     X_test = preprocessor.transform(test_df.drop(columns=['CUSTOMER_ID']))
 
-    return X_train, y, X_test, test_df['CUSTOMER_ID']
+    return X_train, y, X_test, test_df['CUSTOMER_ID'],test_df
 
 if __name__ == "__main__":
-    X_train, y_train, X_test, test_ids = load_and_preprocess_data('../data/training.csv', '../data/validation.csv')
+    X_train, y_train, X_test, test_ids ,test_df= load_and_preprocess_data('../data/training.csv', '../data/validation.csv')
     print("Data loaded and preprocessed successfully!")
